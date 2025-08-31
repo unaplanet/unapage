@@ -8,14 +8,14 @@ import UnaLogo from '@/assets/icons/icon_unaplanet.svg'
 <template>
   <div class = "app-container">
     <header>
-      <RouterLink to="/home">
+      <RouterLink to="/">
         <img :src="UnaLogo" alt="サイトのロゴ" class="logo" />
       </RouterLink>
 
       <nav>
         <ul>
           <li>
-            <RouterLink to="/home">home</RouterLink>
+            <RouterLink to="/">home</RouterLink>
           </li>
           <li>
             <RouterLink to="/portfolio">about</RouterLink>

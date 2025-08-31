@@ -1,3 +1,11 @@
+<script setup>
+import { useHead } from '@unhead/vue';
+
+useHead({
+  title: 'portfolio - unaplanet',
+})
+</script>
+
 <template>
   <div class="about-view">
     <h1>まだ準備中です！</h1>

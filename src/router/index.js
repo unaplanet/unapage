@@ -1,29 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'//homeviewは最初に表示されるページ
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-
-    {
-      path: '/home', // ブラウザでアクセスするときのURL
+      path: '/', // ブラウザでアクセスするときのURL
       name: 'home',
       // どのコンポーネントを表示するか指定
       component: () => import('../views/HomeView.vue')
     },
-
-    {
-      path: '/links', // ブラウザでアクセスするときのURL
-      name: 'links',
-      // どのコンポーネントを表示するか指定
-      component: () => import('../views/LinksView.vue')
-    },
-
+    
     {
       path: '/portfolio',
       name: 'portfolio',
