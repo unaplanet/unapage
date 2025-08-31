@@ -2,22 +2,22 @@
 // 1. vue-routerからRouterLinkとRouterViewをインポート
 import { RouterLink, RouterView } from 'vue-router'
 // 2. assetsフォルダからロゴ画像をインポート
-import SiteLogo from '@/assets/icons/icon_unaplanet.svg'
+import UnaLogo from '@/assets/icons/icon_unaplanet.svg'
 </script>
 
 <template>
   <header>
-    <RouterLink to="/">
-      <img :src="SiteLogo" alt="サイトのロゴ" class="logo" />
+    <RouterLink to="/home">
+      <img :src="UnaLogo" alt="サイトのロゴ" class="logo" />
     </RouterLink>
 
     <nav>
       <ul>
         <li>
-          <RouterLink to="/about">このサイトについて</RouterLink>
+          <RouterLink to="/home">home</RouterLink>
         </li>
         <li>
-          <RouterLink to="/links">リンク集</RouterLink>
+          <RouterLink to="/portfolio">about</RouterLink>
         </li>
       </ul>
     </nav>

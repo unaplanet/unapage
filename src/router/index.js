@@ -11,10 +11,10 @@ const router = createRouter({
     },
 
     {
-      path: '/about', // ブラウザでアクセスするときのURL
-      name: 'about',
+      path: '/home', // ブラウザでアクセスするときのURL
+      name: 'home',
       // どのコンポーネントを表示するか指定
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/HomeView.vue')
     },
 
     {
