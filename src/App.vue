@@ -6,27 +6,49 @@ import UnaLogo from '@/assets/icons/icon_unaplanet.svg'
 </script>
 
 <template>
-  <header>
-    <RouterLink to="/home">
-      <img :src="UnaLogo" alt="サイトのロゴ" class="logo" />
-    </RouterLink>
+  <div class = "app-container">
+    <header>
+      <RouterLink to="/home">
+        <img :src="UnaLogo" alt="サイトのロゴ" class="logo" />
+      </RouterLink>
 
-    <nav>
-      <ul>
-        <li>
-          <RouterLink to="/home">home</RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/portfolio">about</RouterLink>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-  <RouterView></RouterView>
+      <nav>
+        <ul>
+          <li>
+            <RouterLink to="/home">home</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/portfolio">about</RouterLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <RouterView class = "main-content"></RouterView>
+
+    
+    <footer class="footer">
+      <p class="copyright">
+        2025 - unaplanet All rights reserved<br>
+        This site is licensed under <a href="https://github.com/unaplanet/unapage/blob/master/LICENSE">MIT</a>
+      </p>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main-content{
+  flex: 1; /*変幻自在のびのび*/
+}
+
 header {
   /* ▼ここが重要！ Flexboxを適用 */
   display: flex;                  /* 子要素を横並びにする ✨ */
@@ -60,4 +82,26 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+
+.footer {
+  padding: 1rem;
+  font-size: 15px;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 </style>

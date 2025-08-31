@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600&display=swap');
+
+
+
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto Mono', 'Noto Sans JP', monospace, sans-serif;
   font-weight: 600;
 }
 

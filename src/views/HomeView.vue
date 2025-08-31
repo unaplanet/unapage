@@ -21,7 +21,7 @@ useHead({
   <div class="profile-container">
     <img :src="MainLogo" alt="una planet logo" class="main-logo" />
 
-    <h1 class="profile-name">unaunaplanet</h1>
+    <h1 class="profile-name">unaplanet</h1>
 
     <nav class="social-links">
       <ul>

@@ -27,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## アイコンについて
+
+このサイトで使用しているロケットのアイコンは、[Tabler Icons](https://tabler.io/icons) のものです。これらのアイコンはMITライセンスに基づき利用しています。
