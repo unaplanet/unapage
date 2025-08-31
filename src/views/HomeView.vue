@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { useHead } from '@unhead/vue'
 
 
 // --- アイコン画像をインポート ---
@@ -9,9 +10,14 @@ import TwitterIcon from '@/assets/icons/twitter.svg' // Twitterのアイコン
 import GithubIcon from '@/assets/icons/github.svg'   // GitHubのアイコン
 import YoutubeIcon from '@/assets/icons/youtube.svg' // YouTubeのアイコン
 // ... 他にも必要なアイコンがあればここに追加 ...
+
+useHead({
+  title: 'home - unaplanet',
+})
 </script>
 
 <template>
+
   <div class="profile-container">
     <img :src="MainLogo" alt="una planet logo" class="main-logo" />
 
