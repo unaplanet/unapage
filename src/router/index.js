@@ -14,14 +14,20 @@ const router = createRouter({
       path: '/about', // ブラウザでアクセスするときのURL
       name: 'about',
       // どのコンポーネントを表示するか指定
-      component: () => import('../views/aboutview.vue')
+      component: () => import('../views/AboutView.vue')
     },
 
     {
       path: '/links', // ブラウザでアクセスするときのURL
       name: 'links',
       // どのコンポーネントを表示するか指定
-      component: () => import('../views/linksview.vue')
+      component: () => import('../views/LinksView.vue')
+    },
+
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () => import('../views/PortfolioView.vue') 
     },
     // ....
   ]
