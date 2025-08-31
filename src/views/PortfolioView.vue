@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'portfolio - unaplanet',
+})
+</script>
+
 <template>
   <div class="about-view">
     <h1>まだ準備中です！</h1>
