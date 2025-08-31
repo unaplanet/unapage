@@ -30,7 +30,7 @@ import UnaLogo from '@/assets/icons/icon_unaplanet.svg'
     <footer class="footer">
       <p class="copyright">
         2025 - unaplanet All rights reserved<br>
-        This site is licensed under <a href="https://github.com/unaplanet/unapage/blob/master/LICENSE">MIT</a>
+        This site is licensed under <a href="https://github.com/unaplanet/unapage/blob/master/LICENSE" class="footer-link">MIT</a>
       </p>
     </footer>
   </div>
@@ -95,6 +95,10 @@ nav a:hover {
 .copyright {
   text-align: center;
   width: 100%;
+}
+
+.footer-link{
+   color: #777;
 }
 
 @media (min-width: 768px) {
